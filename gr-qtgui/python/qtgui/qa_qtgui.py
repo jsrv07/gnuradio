@@ -51,12 +51,14 @@ class test_qtgui(gr_unittest.TestCase):
                                        0, 1, "Test", 1, None)
 
     def test07(self):
-        self.qtsnk = qtgui.waterfall_sink_c(1024, 5,
-                                    0, 1, 'Test', n_rows=200, nconnections=1, parent=None)
+        self.qtsnk = qtgui.waterfall_sink_c(
+            1024, 5, 0, 1, "Test", n_rows=200, nconnections=1, parent=None
+        )
 
     def test08(self):
-        self.qtsnk = qtgui.waterfall_sink_f(1024, 5,
-                                    0, 1, 'Test', n_rows=200, nconnections=1, parent=None)
+        self.qtsnk = qtgui.waterfall_sink_f(
+            1024, 5, 0, 1, "Test", n_rows=200, nconnections=1, parent=None
+        )
 
     def test09(self):
         self.qtsnk = qtgui.const_sink_c(1024, "Test", 1, None)
